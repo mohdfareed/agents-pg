@@ -18,15 +18,35 @@ Complete beginner's guide to learning how to cook using YouTube content from Eth
 - Motivation and mindset guidance
 - General structure for self-paced learning
 
-### 🔧 Technical Resources
+### 🔧 Automated Data Fetching
+
+**[fetch_youtube_api.py](fetch_youtube_api.py)** ⭐ **RECOMMENDED**
+- Official YouTube Data API v3 implementation
+- Most reliable method for fetching playlists and videos
+- Requires free API key (see setup guide below)
+- Fetches complete channel data, playlists, and videos
+- Generates comprehensive reports
+
+**[YOUTUBE_API_SETUP.md](YOUTUBE_API_SETUP.md)** 📖 **Setup Guide**
+- Step-by-step instructions to get a free YouTube API key
+- No credit card required for typical usage
+- 10,000 free API calls per day
+- Security best practices
+
+**[run_fetcher.sh](run_fetcher.sh)** 🚀 **Easy Run Script**
+- Simple wrapper to run the API fetcher
+- Checks dependencies
+- User-friendly output
+
+**Alternative Methods:**
 
 **[fetch_youtube_playlists.py](fetch_youtube_playlists.py)**
-- Python script using yt-dlp to fetch YouTube playlists
-- Useful for programmatic access when network allows
+- Uses yt-dlp (may be blocked by network restrictions)
+- No API key needed
 
 **[fetch_youtube_rss.py](fetch_youtube_rss.py)**
-- Alternative approach using YouTube RSS feeds
-- More lightweight method for fetching recent videos
+- Uses YouTube RSS feeds (limited to ~15 recent videos)
+- No API key needed
 
 **[youtube_cooking_videos.md](youtube_cooking_videos.md)**
 - Auto-generated overview of playlist series
@@ -36,7 +56,7 @@ Complete beginner's guide to learning how to cook using YouTube content from Eth
 - Structured data about channels and playlists
 - Useful for programmatic processing
 
-## Quick Start
+## Quick Start (Manual Approach)
 
 1. **Read** [DETAILED_COOKING_WATCHLIST.md](DETAILED_COOKING_WATCHLIST.md)
 2. **Go to YouTube** and visit:
@@ -44,6 +64,26 @@ Complete beginner's guide to learning how to cook using YouTube content from Eth
    - [Joshua Weissman](https://youtube.com/@joshuaweissman)
 3. **Start with Week 1**: Kitchen Organization
 4. **Follow the phases** at your own pace
+
+## Quick Start (Automated Approach)
+
+Want to automatically fetch all playlists and videos? Use the YouTube API:
+
+1. **Get a free API key**: Follow [YOUTUBE_API_SETUP.md](YOUTUBE_API_SETUP.md)
+2. **Run the fetcher**:
+   ```bash
+   export YOUTUBE_API_KEY='your-key-here'
+   ./run_fetcher.sh
+   ```
+3. **Check the results**: `YOUTUBE_API_RESULTS.md` will contain all playlists and videos
+4. **Start learning**: Use the generated data alongside the detailed watch list
+
+**Benefits of API approach:**
+- ✅ Get all playlists automatically
+- ✅ See video counts and descriptions
+- ✅ Get recent uploads
+- ✅ Search for specific topics
+- ✅ Completely free (10,000 API calls/day)
 
 ## About the Channels
 
@@ -92,9 +132,16 @@ Full equipment guide in the detailed watch list.
 - **Month 4+:** Advanced techniques and improvisation
 - **Month 6:** Cooking confidently without always needing recipes
 
-## Network Limitations Note
+## Fetching Methods Comparison
 
-The Python scripts may not work in all environments due to YouTube access restrictions. In that case, use the markdown guides which provide search terms to manually find the videos on YouTube.
+| Method | Pros | Cons | Best For |
+|--------|------|------|----------|
+| **YouTube API** ⭐ | Complete data, reliable, official | Requires API key setup | Most users |
+| **Manual search** | No setup, always works | Time-consuming | Quick start |
+| **yt-dlp script** | No API key needed | May be blocked by network | Advanced users |
+| **RSS feeds** | No API key needed | Limited to recent videos | Quick checks |
+
+**Recommendation:** Use the YouTube API method for the best experience. It's free and takes just 5 minutes to set up.
 
 ## License & Usage
 
