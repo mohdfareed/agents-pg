@@ -1,0 +1,78 @@
+{
+  "Ethan Chlebowski": {
+    "url": "https://youtube.com/@ethanchlebowski",
+    "channel_id": "UCJjlcL2AgENfU-uvxIqZawA",
+    "recent_videos": [],
+    "beginner_videos": [],
+    "curated_playlists": [
+      {
+        "name": "Kitchen Fundamentals",
+        "description": "Basic techniques and kitchen organization",
+        "keywords": [
+          "kitchen organization",
+          "beginner",
+          "guide",
+          "fundamentals"
+        ]
+      },
+      {
+        "name": "Cooking Techniques",
+        "description": "Essential cooking methods and skills",
+        "keywords": [
+          "technique",
+          "how to",
+          "basics",
+          "method"
+        ]
+      },
+      {
+        "name": "Recipe Videos",
+        "description": "Full recipe demonstrations",
+        "keywords": [
+          "recipe",
+          "cook",
+          "make"
+        ]
+      }
+    ]
+  },
+  "Joshua Weissman": {
+    "url": "https://youtube.com/@joshuaweissman",
+    "channel_id": "UChBEbMKI1eCcejTtmI32UEw",
+    "recent_videos": [],
+    "beginner_videos": [],
+    "curated_playlists": [
+      {
+        "name": "But Better",
+        "description": "Making restaurant dishes better at home",
+        "keywords": [
+          "but better"
+        ]
+      },
+      {
+        "name": "But Cheaper",
+        "description": "Budget-friendly cooking",
+        "keywords": [
+          "but cheaper"
+        ]
+      },
+      {
+        "name": "But Faster",
+        "description": "Quick and easy recipes",
+        "keywords": [
+          "but faster"
+        ]
+      },
+      {
+        "name": "Fundamentals",
+        "description": "Basic cooking techniques and skills",
+        "keywords": [
+          "fundamental",
+          "basic",
+          "technique",
+          "beginner"
+        ]
+      }
+    ]
+  }
+}
