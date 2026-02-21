@@ -1,2 +1,2 @@
-# claude-code
-Claude Code playground.
+# agents-pg
+AI agents coding playground.
