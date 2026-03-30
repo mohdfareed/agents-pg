@@ -1,2 +1,2 @@
-# agents-pg
-AI agents coding playground.
+# agents-sandbox
+AI agents coding sandbox and playground.
